@@ -50,6 +50,14 @@ Decryption: The string you want to encode
 Verification: True
 ```
 
+### Tests
+
+To run tests with pytest type in main directory:
+
+```
+pytest tests
+```
+
 ## Authors
 
 * **Stanisław Stępak** - [Connect with me on LinkedIn](https://www.linkedin.com/in/stanislaw-stepak/)
