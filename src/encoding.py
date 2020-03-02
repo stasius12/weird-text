@@ -5,6 +5,14 @@ from .base import BaseCryptor
 
 
 class Encryptor(BaseCryptor):
+    """ Encryptr which is taking text as a parameter and
+        after executing encode() the result_text attribute contains
+        encoded text having the following structure:
+        '\n-weird-\n'
+        'Here is encoded text'
+        '\n-weird-\n'
+        'encoded Here text' (this line contains list of words which was encoded - the rest stay the same)
+    """
     def __init__(self, text):
         super().__init__(text)
         self.encrypted_words = []

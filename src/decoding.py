@@ -5,6 +5,9 @@ from .exceptions import SeparatorMismatchException, NoMatchFoundException
 
 
 class Decryptor(BaseCryptor):
+    """ Decryptor which is taking encrypted text as a parameter and
+        after executing decode() the result_text attribute contains decoded text.
+    """
     def __init__(self, text):
         super().__init__(text)
         self.result_words = []
